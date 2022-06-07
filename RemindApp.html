@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="Donald Harris" keywords="Remind App" content="width=device-width">
+  <title>DON'T CLOSE THIS</title>
+  
+<style id="jsbin-css">
+html{
+    background-image: url('https://ak.picdn.net/shutterstock/videos/1022617669/thumb/1.jpg?ip=x480');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+}
+body{
+  margin: auto;
+  width: 95%;
+  text-align: center;
+  opacity: .965;
+}
+header > h1{
+  
+  font-size: 70px;
+  margin: 0px;
+  background: linear-gradient(white, silver);
+  color: white;
+  font-family: Arial;
+  margin-top: 0px;
+}
+header{
+  margin-top: 0px;
+  
+}
+nav{
+  background-color: darkgray;
+  border: solid 1px gray;
+  height: 50px;
+}
+nav, header{
+  
+}
+nav > button{
+  width: 31%;
+  height: 45px;
+  display: inline-block;
+  border-radius: 23px;
+  font-family: Arial;
+  font-size: 30px;
+  margin-top: 3px;
+  margin-left: 10px;
+  background: linear-gradient(white, silver); 
+  border: solid 1px gray;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  font-weight: bold;
+}
+nav > button:active{
+  background: linear-gradient(silver, white);
+}
+#time{
+  background-color: gray;
+  height: 20px;
+  text-align: center;
+  color: black;
+  padding: 10px
+  width: 180px;
+  border-radius: 0px;
+  padding: 0px;
+  position: relative;
+}
+section{
+  
+}
+section > #remindDiv{
+  height: 200px;
+  border: solid gray 1px;
+  margin-top: 10px;
+  background-color: white;
+}
+#remindDiv{
+  position: relative;
+  top: 0px;
+  text-align: center;
+  height: 400px;
+  margin-top: 20px;
+}
+#remindDiv > h1{
+  margin: 0px;
+  font-size: 30px;
+  color: white;
+  background-color: lightgray;
+  position: relative;
+  background: linear-gradient(white, silver);
+      text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#remindDiv> h2{
+  position: relative;
+  top: 30px;
+  font-size:60px;
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial;
+}
+#remindDiv > input[type=time], input[type=date]{
+  position: relative;
+  height: 85px;
+  width:300px;
+  border:1px;
+  border-color: lightgray;
+  border-style: none;
+  text-align: center;
+  font-size: 300%;
+  word-spacing: 9px;
+  letter-spacing: 1px;
+  margin-top: 0px;
+  bottom: -20px;
+  margin-left: 0px;
+  margin-right: 0px;
+   outline: none;
+  display: inline-block;
+}
+#remindDiv > button{
+  position: relative;
+margin-left: 10px;
+  margin-top: 40px;
+  height: 30px;
+  width:46%;
+  outline: none;
+  color: white;
+  background: linear-gradient(lightgray, white);
+  font-size: 20px;
+}
+#PS{
+  position: relative;
+  margin-bottom: 60px;
+  background:linear-gradient(silver, lightgray, white);
+  height: 330px;
+  border:solid 1px white;
+}
+#PS > div{
+  position: relative;
+  margin-top: -15px;
+}
+#PS > h1{
+  text-align: center;
+  width: 100%;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  height: 57px;
+  line-height: 60px;
+  background: linear-gradient(silver, white);
+  color: white;
+  font-family: Arial;
+  font-size: 45px;
+}
+#PS > h3{
+  font-family: Arial;
+  margin: 0px;
+  top: -10px;
+  display: inline-block;
+  position: relative;
+  right: 30px;
+  color: white;
+
+}
+#CB{
+  outline: none;
+  border: solid 1px darkgray;
+  color: white;
+}
+#PS > button{
+  text-align: center;
+  margin-top: 0px;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 150px;
+  height: 25px;
+  border-radius: 0;
+  cursor: pointer
+}
+#PS > .btn{
+  text-align: center;
+  margin-top: 0px;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 45%;
+  height: 35px;
+  border-radius: 0;
+  cursor: pointer;
+  color: white;
+  line-height: 0px;
+  font-size: 30px;
+  background:linear-gradient(lightgray,white) ;
+}
+#PS > input{
+  margin-top:0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 40%;
+  height: 30px;
+  padding: 0px;
+  font-size: 30px;
+  word-spacing: 0px;
+  outline: none;
+  text-align: center;
+}
+#PS > label{
+  font-size: 0px;
+}
+#PS > input[type=range]{
+  margin-top:-20px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  width: 33%;
+  height: 30px;
+  padding: 0px;
+  font-size: 30px;
+  word-spacing: 0px;
+  display: inline;
+}
+#PS > p{
+
+  display: inline-block;
+  margin-left: 30px;
+  position: relative;
+  margin: 0px;
+  top: -10px;
+  left: 20px;
+}
+
+
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>REMIND</h1>
+  </header>
+ <nav>
+    <button id="newBtn" onclick="createReminder()">NEW</button>
+
+   <button onclick="w3.toggleShow('#PS')">POP-UP</button>
+   <button onclick="clearSec(event)">CLEAR</button>
+  </nav>
+  <div id="time"></div>
+  <div id="PS" style="">
+     <h1>POP-UP SETTINGS</h1>
+    <input placeholder="IMG URL " value="https://d3kjluh73b9h9o.cloudfront.net/original/3X/d/8/d8de9c617bf148227c21da2e68ebec3317b2ddd0.gif" type="text" d="imgSrc"></input>
+  <hr>
+  <br><div><label for='close'>AUTO CLOSE WINDOW</label><input type="checkbox"></input></div>
+  <hr>
+  <br><h3>HEIGHT</h3> <input id="height-in" type="range"></input><p></p>
+  <hr>
+  <br><h3>WIDTH</h3><input id="width-in" type="range"></input><p></p>
+<hr>
+<button onclick="changeName()" id="CB" >Change Username</button>
+<hr>
+<button id="SB">SAVE</button>
+<button onclick="this.parentElement.style.display = 'none'">EXIT</button>
+  </div>
+  <section>
+    <div id="remindDiv" style="display: none">
+      <h1 contenteditable="true">REMIND MESSAGE</h1>
+      <h2></h2>
+      <input  type="time"></input><input type="date"></input>
+<br>
+<button>SAVE</button>      <button onclick="">REMOVE</button>
+    </div>
+  </section>
+  <script src="w3.js"></script>
+<script>
+ document.addEventListener('contextmenu',function(e){e.preventDefault()})
+function inspctElmnt(){
+	document.body.onkeydown = function(event){
+		if(event.ctrlKey === true && event.shiftKey === true && event.key === 'I'.charCodeAt(0)){
+			alert('no')
+		   event.preventDefault()	
+		}else if(event.ctrlKey === true && event.keyCode == 'U'.charCodeAt(0)){
+         event.preventDefault()
+	}
+  }
+}
+function getName(){
+    var changeBtn = document.getElementById('CB');
+  var savedName = localStorage.getItem('userName')
+  if(savedName === null || savedName == 'Name'){
+     var name = prompt('Enter Your Name', 'Name')
+  localStorage.setItem('userName', name) 
+  }else{
+    console.log(savedName)
+  }
+}
+function changeName(){
+    var changeBtn = document.getElementById('CB');
+  var savedName = localStorage.getItem('userName')
+  var newName = prompt('Enter New Name', savedName)
+  localStorage.setItem('userName', newName)
+}
+document.addEventListener('load', getName())
+function clock(){
+  var section = document.querySelectorAll('section')[0];
+  var divs = section.getElementsByTagName('div');
+  var t = new Date();
+  var h2 = t.getHours();
+    var meridian = (h2 > 12)? 'PM': 'AM';
+    var hoursDiff = (meridian == 'PM')? ((t.getHours() - 12)+1) :(t.getHours() - 12)
+  var hour = (t.getHours() > 12)?hoursDiff: t.getHours();
+  var hour2 = (hour === 0)? 12 : hour;
+  var minutes = (t.getMinutes() < 10)? '0' + t.getMinutes(): t.getMinutes();
+  var year = t.getFullYear();
+  var month = (t.getMonth() + 1 < 10)? '0'+ (t.getMonth()+1): (t.getMonth()+1);
+  var day = t.getDate();
+  localStorage.setItem('day', day)
+  var currentTime = parseInt(hour2) + ':' + minutes + ' ' + meridian + " " + year+"-"+month+"-"+((day < 10)? '0'+day: day);
+  document.getElementById('time').innerText = currentTime;
+  var date = document.getElementById('time').innerText;
+  var popHeight = document.getElementById('height-in');
+  var popWidth = document.getElementById('width-in');
+  var saveBtn = document.getElementById('SB')
+    var savedName = localStorage.getItem('userName')
+
+  var imgURL = saveBtn.parentElement.querySelector('input').value
+  popHeight.max = screen.availHeight;
+  popHeight.min = screen.availHeight/2;
+  popWidth.max = screen.availWidth/2;
+  popWidth.min = screen.availWidth/4;
+popHeight.onkeydown = function(){
+    popHeight.nextElementSibling.innerHTML = this.value; 
+    
+  }
+  popHeight.onmousedown = function(){
+    popHeight.nextElementSibling.innerHTML = this.value; 
+  }
+    popWidth.onkeydown = function(){
+    popWidth.nextElementSibling.innerHTML = this.value; 
+  }
+  popWidth.onmousedown = function(){
+    popWidth.nextElementSibling.innerHTML = this.value; 
+  }
+  let height = popHeight.nextElementSibling.innerHTML;
+  let width = popWidth.nextElementSibling.innerHTML;
+ if(height ===  0 && width === 0){
+    height = 1000
+     width= 1000
+  }else if(height === 0){
+   height = 1000
+  }else if(width === 0){ 
+    width = 1000
+  }
+  saveBtn.onclick = function(){
+  var obj = Object.create({})
+  obj.Height = height;
+  obj.Width = width;
+  obj.imgURL = imgURL
+  obj.autoClose = saveBtn.parentElement.querySelector('input[type=checkbox]').checked
+  localStorage.setItem('popSet', JSON.stringify(obj))
+  console.log(JSON.parse(localStorage.getItem('popSet')))
+  alert('SAVED!')
+  }
+  var user = (savedName == 'Name' || savedName === "")? 'user': savedName;
+  for(let i = 1; i < divs.length; i++){
+     if(date.includes(divs[i].querySelectorAll('h2')[0].innerText) && t.getSeconds() <= 2){
+        if(divs[i].querySelector('button').style.display == 'none'){ 
+        //  readMessage(user + '! '+ divs[i].querySelectorAll('h1')[0].innerText)
+         var popUp2 = window.open("", "popUp2", "left,width="+ width +",height="+height+"")
+        readMessage(popUp2,user + '! '+ divs[i].querySelectorAll('h1')[0].innerText, width, height)
+        }
+      }
+  }
+
+  setTimeout(clock);
+}
+(function(){
+    var strg = (JSON.parse(localStorage.getItem('reminders')) === null)? []: JSON.parse(localStorage.getItem('reminders'))
+  if(strg.length === 0){
+    createReminder()
+  }
+})()
+document.body.addEventListener('load', clock());
+function createReminder(){
+ var section = document.querySelectorAll('section')[0];
+ var div = section.querySelectorAll('div')[0];
+  var clone = div.cloneNode(true);  
+  var newArr = [];
+      var savedData = JSON.parse(localStorage.getItem('remindList'))
+                                 var dateIn = clone.querySelectorAll('input')[1]; 
+  var timeIn = clone.querySelectorAll('input')[0]; 
+  clone.querySelectorAll('button')[0].addEventListener('click', function(){
+    var timeInputSplit = timeIn.value.split(':'),
+      hours, minutes, meridian;
+    hours = timeInputSplit[0] ;
+    minutes = timeInputSplit[1];
+    if(hours <= 12){
+      meridian = 'AM'
+     
+    }else if(hours > 12){
+      meridian = 'PM'
+      hours -= 12
+    }else{
+      hours = 12
+      meridian = "PM"
+    }
+    var dateInputValue = dateIn.value;
+    var setTime = parseInt((hours === undefined || hours === 0)? hours = '12' : hours) + ':' + minutes + ' ' + meridian + ' ' + dateInputValue;
+    setTime = (setTime[0] === '0' && meridian == 'AM')? setTime.replace('0','12'):setTime 
+    if(setTime.includes('undefined')){
+     // this.preventDefault();
+      console.log(setTime)
+    }else{
+    let obj = Object.create({}); 
+    obj.name = clone.querySelector('h1').innerText.trim();
+    obj.remindTime = setTime.trim();
+    if(savedData === null){
+      newArr.push(obj);
+      localStorage.setItem('remindList', JSON.stringify(newArr));
+      console.log(JSON.parse(localStorage.getItem('remindList')));
+    }else{
+      savedData.push(obj); 
+         localStorage.setItem('remindList', JSON.stringify(savedData));
+      console.log(JSON.parse(localStorage.getItem('remindList')));
+    }
+    clone.querySelectorAll('h2')[0].style.display = "block";
+    clone.querySelectorAll('h2')[0].innerText = setTime.trim();
+    clone.querySelectorAll('button')[0].style.display = "none";
+    clone.querySelectorAll('input')[0].style.display = "none"; 
+    clone.querySelectorAll('input')[1].style.display = "none";
+    }
+ });
+  clone.querySelectorAll('button')[1].addEventListener('click', function(){
+    if(this.parentElement.querySelectorAll('h2')[0].innerHTML == ""){
+      this.parentElement.remove()
+    }else{
+      Delete(savedData, this.parentElement)
+    }
+  });
+  clone.querySelectorAll('input')[0].style.display = "inline-block";
+   clone.querySelectorAll('input')[1].style.display = "inline-block";
+  clone.querySelectorAll('h2')[0].style.display = "none";
+  clone.style.display = "block";
+  section.appendChild(clone);
+}
+function loadData(){
+  var section = document.querySelectorAll('section')[0];
+  var savedData = JSON.parse(localStorage.getItem('remindList'));
+  var savedData2 = JSON.parse(localStorage.getItem('popSet'));
+  var settingsMenu = document.getElementById('PS')
+  if(savedData !== null && savedData2 !== null){
+  if(savedData.length > 0){
+  for(let i = 0; i < savedData.length;i++){
+      var div = section.querySelectorAll('div')[0];
+      var clone = div.cloneNode(true); 
+    clone.querySelector('h1').innerText = savedData[i].name;
+    clone.querySelectorAll('h2')[0].innerText = savedData[i].remindTime;
+    clone.style.display="block";
+    clone.querySelectorAll('button')[0].style.display = "none";
+    clone.querySelectorAll('button')[1].addEventListener('click', function(){
+    if(this.parentElement.querySelector('h2').innerHTML == ""){
+      this.parentElement.remove()
+    }else{
+         Delete(savedData, this.parentElement)
+    }
+    });
+    clone.querySelectorAll('input')[0].style.display = "none";
+    clone.querySelectorAll('input')[1].style.display = "none";
+    clone.querySelectorAll('h2')[0].style.display = "block";
+    settingsMenu.querySelectorAll('p')[0].innerText = savedData2.Height
+    settingsMenu.querySelectorAll('p')[1].innerText = savedData2.Width
+    let inVal = (savedData2.imgURL === null || savedData2.imgURL === '')? 'https://d3kjluh73b9h9o.cloudfront.net/original/3X/d/8/d8de9c617bf148227c21da2e68ebec3317b2ddd0.gif' :savedData2.imgURL
+	settingsMenu.querySelectorAll('input[type=text]')[0].value = inVal
+    if(savedData2.autoClose == true){
+	settingsMenu.querySelectorAll('input[type=checkbox]')[0].click()
+    }
+  
+    settingsMenu.querySelectorAll('p')[0].style.display = 'block'
+    settingsMenu.querySelectorAll('p')[1].style.display = 'block'
+
+    section.appendChild(clone)
+  }
+ }}
+}
+document.body.addEventListener('load', loadData());
+  function Delete(arr, div){   
+console.log(arr)  
+    let confirmBox = confirm('DELETE THIS REMINDER?');
+        if(confirmBox == true){
+          for(let i = 0; i < arr.length; i++){
+            if(arr[i].remindTime.trim() == div.querySelector('h2').innerText){
+           arr.splice(arr.indexOf(arr[i]), 1);
+           localStorage.setItem('remindList', JSON.stringify(arr));
+           console.log(JSON.parse(localStorage.getItem('remindList')));
+           div.remove();
+          }
+         }        
+        }else{
+          div.querySelectorAll('button')[1].preventDefault();        
+      }
+  }
+  function readMessage(win, txt, w, h){
+    let spaceNum = 1
+  for(let s = 0; s<= txt.length;s++){
+    if(s == ' '){
+	  spaceNum+=1
+	}
+  }
+    let PS = document.getElementById('PS')
+    let PScheck = PS.querySelector('div').querySelectorAll('input[type=checkbox]')[0]
+  var synth = window.speechSynthesis;
+  var voices = synth.getVoices()
+var speech =new SpeechSynthesisUtterance(txt)
+  speech.lang = 'en-GB'
+  speech.localService = false
+  win.focus()
+   win.onfocus = function(){
+     win.document.write("<style>html{background-size:100% 100%;background-repeat:no-repeat;background-image:url('https://ak.picdn.net/shutterstock/videos/1022617669/thumb/1.jpg?ip=x480')}</style>")
+   win.document.write("<h1 style='text-align: center'>"+ txt +"</h1>");
+   win.document.write("<img style='width: 100%; text-align: center;' src='"+document.querySelector('#PS').querySelectorAll('input')[0].value+"'/>")
+  synth.speak(speech)
+  if(PScheck.checked == true){
+    let wait = setTimeout(function(){
+	if(!win.closed){
+	win.close()
+	}else{clearTimeout(wait)}}, ((spaceNum+1)*1000))
+  }
+}}
+
+function clearSec(e){
+let cnfrm = confirm('all reminders will be removed!')
+if(cnfrm === false){
+e.preventDefault()
+}else{
+    var section = document.querySelectorAll('section')[0];
+   var div = section.querySelectorAll('div')[0];
+  var clone = div.cloneNode(true);  
+  section.innerHTML = ""
+ 
+  section.appendChild(clone)
+    localStorage.setItem('remindList', JSON.stringify([]))
+}
+}
+(function sayQuote(){
+  let sizeObj = Object.create({})
+  sizeObj.Width = (screen.availWidth/4)+'px'
+  sizeObj.Height = (screen.availHeight)+'px'
+  let popSet = (localStorage.getItem('popSet') === null)? sizeObj:localStorage.getItem('popSet')
+fetch("https://type.fit/api/quotes")
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+console.log(data)
+    let n = 0
+     let sayInt = setInterval(function(){
+       if(n == 5){
+       n+=1
+       }else{
+         n = 0
+       }
+         let rndm = (Math.random() + '').slice(2, 5)
+         let rndmNum = (parseInt(rndm, 10) > data.length)? data[data.length-(n*2)] : parseInt(rndm, 10)
+         console.log(data[rndmNum])
+                  var newWin = window.open("", "newWin", "left,width="+ popSet.Width +",height="+popSet.Height+"")
+
+         readMessage(newWin,data[rndmNum].text, popSet.Width,popSet.Height)
+       }, (60000)*15)
+  });
+})()
+function stopEnter(e){
+     let keyCode = e.key
+      if(keyCode.toLowerCase() == 'enter'){
+        e.preventDefault()
+        return false
+      }
+   
+}
+function removeSpace(txt){
+let txtArr = Array.from(txt)
+  for(let s of txt){
+    if(txt[txt.indexOf(s)+1] !== ' '){
+       txtArr[s]
+    }else{
+      txt.replace(s, '')
+    }
+  }
+}
+</script>
+</body>
+</html>
